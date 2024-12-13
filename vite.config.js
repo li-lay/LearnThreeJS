@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: 'https://li-lay.github.io/LearnThreeJS/'
+  // base: 'https://li-lay.github.io/LearnThreeJS/'
 })
