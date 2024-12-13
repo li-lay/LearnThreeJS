@@ -19,7 +19,7 @@ document.body.appendChild(renderer.domElement)
 const loader = new OBJLoader();
 
 let catObj;
-loader.load('../public/models/cat/12222_Cat_v1_l3.obj', function (object) {
+loader.load('/models/cat/12222_Cat_v1_l3.obj', function (object) {
 
   catObj = object;
 
@@ -30,7 +30,7 @@ loader.load('../public/models/cat/12222_Cat_v1_l3.obj', function (object) {
   object.rotation.x = 0;
 
   const textureLoader = new THREE.TextureLoader();
-  textureLoader.load('../public/models/cat/Cat_diffuse.jpg', function (texture) {
+  textureLoader.load('/models/cat/Cat_diffuse.jpg', function (texture) {
 
     const catTexture = new THREE.MeshBasicMaterial({ map: texture })
     // Traverse the object to apply the material to each mesh
