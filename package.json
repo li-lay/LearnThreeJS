@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "vite",
-    "build": "SET 'NODE_ENV=production' && vite build"
+    "build": "NODE_ENV=production vite build"
   },
   "dependencies": {
     "three": "^0.171.0"
