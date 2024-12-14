@@ -19,7 +19,7 @@ document.body.appendChild(renderer.domElement)
 let textMesh;
 const fontLoader = new FontLoader();
 fontLoader.load(
-  './assets/fonts/Roboto_Regular.json',
+  '/assets/fonts/Roboto_Regular.json',
   function (font) {
 
     // Text shape
