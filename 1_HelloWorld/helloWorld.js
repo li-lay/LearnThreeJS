@@ -66,6 +66,18 @@ fontLoader.load(
 // Camera Pos
 camera.position.z = 2;
 
+// Function to handle window resize
+function onWindowResize() {
+  // Update camera aspect ratio
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+
+  // Update renderer size
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+window.addEventListener('resize', onWindowResize, false);
+
 // Rendering & rotation
 function animate() {
   renderer.setAnimationLoop(animate);
