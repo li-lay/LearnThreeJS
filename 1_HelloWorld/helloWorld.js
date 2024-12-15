@@ -5,8 +5,7 @@ import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
 // Initial
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
 const renderer = new THREE.WebGLRenderer();
 
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -64,7 +63,7 @@ fontLoader.load(
 )
 
 // Camera Pos
-camera.position.z = 2;
+camera.position.z = 6;
 
 // Function to handle window resize
 function onWindowResize() {
